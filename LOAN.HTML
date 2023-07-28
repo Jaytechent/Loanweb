@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet"href="style.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Website</title>
+  <style>
+
+    /* Add your custom CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    /* Add more styles for header, footer, etc., as needed */
+  </style>
+</head>
+<body>
+    
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to GABETONY Loan Services</h1>
+    <!-- Add navigation links here if required -->
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <section>
+      <h2>Apply for  Loan</h2>
+      <p>
+        Fill out the form below to apply for a loan.
+      </p>
+      <form action="/mailto:olemilek100@gmail.com" method="post" enctype="multipart/form-data">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="svcNum">Svc Num and Rank:</label>
+        <input type="text" id="svcnum" name="Svc Num" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="loan_amount">Loan Amount:</label>
+        <input type="number" id="loan_amount" name="loan_amount" required>
+
+        <label for="loan_type">Loan Type:</label>
+        <select id="loan_type" name="loan_type" required>
+          <option value="">Select a Loan Type</option>
+          <option value="personal">Personal Loan</option>
+          <option value="home">Home Loan</option>
+          <option value="car">Car Loan</option>
+          <!-- Add more loan types as needed -->
+        </select>
+
+        <button type="submit">SUBMIT APPLICATION</button>
+      </form>
+
+
+
+    </section>
+    
+    <section>
+    <h3>Monthly Interest Rate Calculator</h3>
+    <p>
+      Use our loan calculator to estimate your monthly payments.
+    </p>
+  </header>
+  <div class="container">
+    <form class="interest-form">
+      <label for="principal">Loan Principal Amount:</label>
+      <input type="number" id="principal" step="any" required>
+      
+      <label for="months">Loan Term (Months):</label>
+      <input type="number" id="months" required>
+      
+      <button type="button" onclick="calculateInterest()">Calculate</button>
+      
+      <div id="result"></div>
+    
+    </form>
+  </div>
+  <script>
+    function calculateInterest() {
+      const principal = parseFloat(document.getElementById('principal').value);
+      const months = parseInt(document.getElementById('months').value);
+      const interestRate = 0.15; // 15% interest rate (monthly)
+
+      // Calculate the total amount to be repaid
+      const totalAmount = principal + (principal * interestRate * months);
+
+      // Calculate the monthly installment
+      const monthlyInstallment = totalAmount / months;
+
+      // Display the result
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = `
+        <p>Total Amount to be Repaid: ♯${totalAmount.toFixed(2)}</p>
+        
+      `;
+    }
+  </script>
+   </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>Contact us at: gabetony@jaytechentloanservices.com</p>
+    <!-- Add more contact information, links, etc., as needed -->
+  </footer>
+
+</body>
+</html>

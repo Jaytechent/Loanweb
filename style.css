@@ -1,0 +1,127 @@
+/* Reset some default styles */
+body, html {
+    margin: 20;
+    padding: 30;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(28, 57, 109);
+
+
+    text-decoration-color: aqua;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  
+  
+  /* Header stylesd: */
+  header {
+    background-color: rgb(175, 135, 250);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 5;
+    background-color: lightskyblue;
+    color: rebeccapurple;
+    padding: 30px;
+  }
+  header h2 {
+    margin: 5;
+    background-color: rgb(118, 123, 126);
+    color: rgb(121, 15, 228);
+    text-align: center;
+    padding: 30px;
+  }
+  header h3 {
+    margin: 25;
+    background-color: rgb(118, 123, 126);
+    color: rgb(121, 15, 228);
+    text-align: center;
+    padding: 30px;
+  }
+
+  /* Navigation styles */
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: skyblue;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 10px;
+  }
+  
+  nav a:hover {
+    background-color: #777;
+  }
+  
+  /* Main content styles */
+  .container {vertical-align: top;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+
+  }
+  
+  /* Loan form styles */
+  .form {
+    max-width: 10px;
+    margin: 0 auto;
+    align-items: left;
+  }
+  
+  .form label {
+    display: ruby-base-container;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .form input[type="text"],
+  .form input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left;
+  }
+  
+  .form button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color:  rgb(175, 135, 250);
+    color: rebeccapurple;
+    text-align: center;
+    font-style: oblique;
+    font-weight: 800;
+    padding: 40px;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+    
+    nav a {
+      margin-bottom: 20px;
+    }
+  }
+  
